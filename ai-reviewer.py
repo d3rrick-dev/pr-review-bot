@@ -42,7 +42,7 @@ Here is the diff:
         messages=[{"role": "user", "content": prompt}]
     )
 
-    return response.choices[0].message["content"]
+    return response.choices[0].message.content
 
 
 if __name__ == "__main__":
